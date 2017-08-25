@@ -7,10 +7,10 @@ module.exports = (env = {}) => {
 	const isProduction = env.production === true;
 
 	return {
-		context: __dirname + '/frontend/editor',
+		context: __dirname,
 		entry: './src/base.js',
 		output: {
-			path: __dirname + '/frontend/editor/dist',
+			path: __dirname + '/dist',
 			filename: 'bundle.js',
 			libraryTarget: 'var',
 			library: 'dolphin'
